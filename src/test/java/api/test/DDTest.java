@@ -1,5 +1,9 @@
 package api.test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -30,7 +34,7 @@ public class DDTest {
 		Response response=UserEndpoints.createUser(userPayload);
 		response.then().log().all();
 		
-		Assert.assertEquals(response.getStatusCode(), 200);
+		AssertJUnit.assertEquals(response.getStatusCode(), 200);
 	}
 	
 	@Test(priority=2,dataProvider="UserNames",dataProviderClass=DataProviders.class)
@@ -38,7 +42,7 @@ public class DDTest {
 		Response response=UserEndpoints.deleteUser(UserName);
 		response.then().log().all();
 		
-		Assert.assertEquals(response.getStatusCode(), 200);
+		AssertJUnit.assertEquals(response.getStatusCode(), 200);
 	}
 
 }

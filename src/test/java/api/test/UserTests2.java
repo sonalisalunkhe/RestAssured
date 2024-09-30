@@ -12,11 +12,11 @@ import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
 
-import api.endpoints.UserEndpoints;
+import api.endpoints.UserEndpoints2;
 import api.payload.User;
 import io.restassured.response.Response;
 
-public class UserTests {
+public class UserTests2 {
 	
 	Faker faker;
 	User userPayload;
@@ -40,14 +40,14 @@ public class UserTests {
 	@Test(priority=1)
 	public void test_createUser() {
 	
-		Response response=UserEndpoints.createUser(userPayload);
+		Response response=UserEndpoints2.createUser(userPayload);
 		response.then().log().all();
 		
 		AssertJUnit.assertEquals(response.getStatusCode(), 200);
 	}
 	@Test(priority=2)
 	public void test_getUserByName() {
-		Response response=UserEndpoints.getUser(this.userPayload.getUsername());
+		Response response=UserEndpoints2.getUser(this.userPayload.getUsername());
 		response.then().log().all();
 		
 		AssertJUnit.assertEquals(response.getStatusCode(), 200);
@@ -59,13 +59,13 @@ public class UserTests {
 		userPayload.setLastName(faker.name().lastName());
 		userPayload.setEmail(faker.internet().safeEmailAddress());
 		
-		Response response=UserEndpoints.updateUser(this.userPayload.getUsername(), userPayload);
+		Response response=UserEndpoints2.updateUser(this.userPayload.getUsername(), userPayload);
 		response.then().log().all();
 		
 		AssertJUnit.assertEquals(response.getStatusCode(), 200);
 		
 		
-		Response responseAfterUpdate=UserEndpoints.getUser(this.userPayload.getUsername());
+		Response responseAfterUpdate=UserEndpoints2.getUser(this.userPayload.getUsername());
 		response.then().log().all();
 		
 		AssertJUnit.assertEquals(responseAfterUpdate.getStatusCode(), 200);
@@ -73,7 +73,7 @@ public class UserTests {
 	
 	@Test(priority=4)
 	public void test_deleteUser() {
-		Response response=UserEndpoints.deleteUser(this.userPayload.getUsername());
+		Response response=UserEndpoints2.deleteUser(this.userPayload.getUsername());
 		response.then().log().all();
 		
 		AssertJUnit.assertEquals(response.getStatusCode(), 200);
