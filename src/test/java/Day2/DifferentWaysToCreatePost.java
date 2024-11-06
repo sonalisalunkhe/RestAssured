@@ -1,4 +1,5 @@
 package Day2;
+import org.testng.annotations.Test;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.testng.annotations.Test;
@@ -17,6 +18,7 @@ public class DifferentWaysToCreatePost {
 	int id;
 	
 	//@Test
+	@Test
 	public void test_PostHashMap() {
 		
 		HashMap data=new HashMap();
@@ -37,6 +39,7 @@ public class DifferentWaysToCreatePost {
 		.extract().response().jsonPath().getInt("id");
 	}
 	//@Test
+		@Test
 		public void test_PostWithOrgJson() {
 			
 			JSONObject data=new JSONObject();
@@ -56,6 +59,7 @@ public class DifferentWaysToCreatePost {
 			.extract().response().jsonPath().getInt("id");
 		}
 	//@Test
+	@Test
 	public void test_PostWithPojoClass() {
 		
 		Pojo_PostRequest data2=new Pojo_PostRequest();

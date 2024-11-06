@@ -1,5 +1,7 @@
 package Day4;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
@@ -31,9 +33,9 @@ public class ParsingJsonResponse {
 		.log().headers();
 		*/
 		
-		Assert.assertEquals(res.statusCode(), 200);
+		AssertJUnit.assertEquals(res.statusCode(), 200);
 		String name=res.jsonPath().get("data[2].first_name").toString();
-		Assert.assertEquals(name, "Tobias");
+		AssertJUnit.assertEquals(name, "Tobias");
 		
 		boolean status=false;
 		JSONObject jo=new JSONObject(res.asString());
@@ -50,7 +52,7 @@ public class ParsingJsonResponse {
 			}
 			
 		}
-		Assert.assertEquals(status, true);
+		AssertJUnit.assertEquals(status, true);
 	}
 	
 

@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Default test</title>
+<title>TestNG:  Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Default test</h2><table border='1' align="center">
+<h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>26/7/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>27/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 16 11:49:07 IST 2024</td>
+<td>Started on:</td><td>Mon Sep 16 11:50:47 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18734 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21514 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,322 +76,6 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Day4.FileUploadAndDownload.test_singleFileUpload()'><b>test_singleFileUpload</b><br>Test class: Day4.FileUploadAndDownload</td>
-<td><div><pre>java.lang.IllegalArgumentException: MIME subtype may not be blank
-	at org.apache.http.util.Args.notBlank(Args.java:74)
-	at org.apache.http.entity.mime.MultipartEntityBuilder.setMimeSubtype(MultipartEntityBuilder.java:102)
-	at org.apache.http.entity.mime.MultipartEntityBuilder$setMimeSubtype$2.call(Unknown Source)
-	at io.restassured.internal.multipart.RestAssuredMultiPartEntity.&lt;init&gt;(RestAssuredMultiPartEntity.groovy:50)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:304)
-	at io.restassured.internal.RequestSpecificationImpl$_registerRestAssuredEncoders_closure24.doCall(RequestSpecificationImpl.groovy:1429)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.Closure.call(Closure.java:433)
-	at io.restassured.internal.http.HTTPBuilder$RequestConfigDelegate.setBody(HTTPBuilder.java:1134)
-	at io.restassured.internal.http.HTTPBuilder$RequestConfigDelegate.setPropertiesFromMap(HTTPBuilder.java:1046)
-	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:344)
-	at io.restassured.internal.http.HTTPBuilder$post$3.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at Day4.FileUploadAndDownload.test_singleFileUpload(FileUploadAndDownload.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace386153220", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace386153220'><pre>java.lang.IllegalArgumentException: MIME subtype may not be blank
-	at org.apache.http.util.Args.notBlank(Args.java:74)
-	at org.apache.http.entity.mime.MultipartEntityBuilder.setMimeSubtype(MultipartEntityBuilder.java:102)
-	at org.apache.http.entity.mime.MultipartEntityBuilder$setMimeSubtype$2.call(Unknown Source)
-	at io.restassured.internal.multipart.RestAssuredMultiPartEntity.&lt;init&gt;(RestAssuredMultiPartEntity.groovy:50)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:304)
-	at io.restassured.internal.RequestSpecificationImpl$_registerRestAssuredEncoders_closure24.doCall(RequestSpecificationImpl.groovy:1429)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.Closure.call(Closure.java:433)
-	at io.restassured.internal.http.HTTPBuilder$RequestConfigDelegate.setBody(HTTPBuilder.java:1134)
-	at io.restassured.internal.http.HTTPBuilder$RequestConfigDelegate.setPropertiesFromMap(HTTPBuilder.java:1046)
-	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:344)
-	at io.restassured.internal.http.HTTPBuilder$post$3.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
-	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
-	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at Day4.FileUploadAndDownload.test_singleFileUpload(FileUploadAndDownload.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Day4.FileUploadAndDownload@1ea9f6af</td></tr>
-<tr>
-<td title='Day7.DeleteUser.test_DeleteUser()'><b>test_DeleteUser</b><br>Test class: Day7.DeleteUser<br>Parameters: org.testng.TestRunner@7eb27768</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;org.testng.ITestContext.getAttribute(String)&quot; is null
-	at Day7.DeleteUser.test_DeleteUser(DeleteUser.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace714721945", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace714721945'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;org.testng.ITestContext.getAttribute(String)&quot; is null
-	at Day7.DeleteUser.test_DeleteUser(DeleteUser.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Day7.DeleteUser@7193666c</td></tr>
-<tr>
 <td title='Day6.Authentications.Oauth1Authentiication()'><b>Oauth1Authentiication</b><br>Test class: Day6.Authentications</td>
 <td><div><pre>java.lang.NoClassDefFoundError: com/github/scribejava/core/model/Token
 	at io.restassured.internal.http.AuthConfig.oauth(AuthConfig.java:184)
@@ -405,10 +89,6 @@ function toggleAllBoxes() {
 	at io.restassured.authentication.AuthenticationScheme$authenticate.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1199)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -436,10 +116,6 @@ function toggleAllBoxes() {
 	at io.restassured.filter.FilterContext$next.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -451,10 +127,6 @@ function toggleAllBoxes() {
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -467,41 +139,14 @@ function toggleAllBoxes() {
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:172)
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
 	at Day6.Authentications.Oauth1Authentiication(Authentications.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Caused by: java.lang.ClassNotFoundException: com.github.scribejava.core.model.Token
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	... 101 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1647496677", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1647496677'><pre>java.lang.NoClassDefFoundError: com/github/scribejava/core/model/Token
+	... 104 more
+... Removed 42 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace199076892", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace199076892'><pre>java.lang.NoClassDefFoundError: com/github/scribejava/core/model/Token
 	at io.restassured.internal.http.AuthConfig.oauth(AuthConfig.java:184)
 	at io.restassured.internal.http.AuthConfig$oauth.call(Unknown Source)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
@@ -513,7 +158,8 @@ Caused by: java.lang.ClassNotFoundException: com.github.scribejava.core.model.To
 	at io.restassured.authentication.AuthenticationScheme$authenticate.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1199)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -544,7 +190,8 @@ Caused by: java.lang.ClassNotFoundException: com.github.scribejava.core.model.To
 	at io.restassured.filter.FilterContext$next.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -559,7 +206,8 @@ Caused by: java.lang.ClassNotFoundException: com.github.scribejava.core.model.To
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -607,74 +255,95 @@ Caused by: java.lang.ClassNotFoundException: com.github.scribejava.core.model.To
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	... 101 more
+	... 104 more
 </pre></div></td>
 <td>0</td>
-<td>Day6.Authentications@5f058f00</td></tr>
+<td>Day6.Authentications@188715b5</td></tr>
 <tr>
-<td title='Day7.GetUser.test_getUser()'><b>test_getUser</b><br>Test class: Day7.GetUser<br>Parameters: org.testng.TestRunner@7eb27768</td>
-<td><div><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+<td title='Day4.FileUploadAndDownload.test_multipleFileUpload()'><b>test_multipleFileUpload</b><br>Test class: Day4.FileUploadAndDownload</td>
+<td><div><pre>java.lang.IllegalArgumentException: MIME subtype may not be blank
+	at org.apache.http.util.Args.notBlank(Args.java:74)
+	at org.apache.http.entity.mime.MultipartEntityBuilder.setMimeSubtype(MultipartEntityBuilder.java:102)
+	at org.apache.http.entity.mime.MultipartEntityBuilder$setMimeSubtype$2.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.multipart.RestAssuredMultiPartEntity.&lt;init&gt;(RestAssuredMultiPartEntity.groovy:50)
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at Day7.GetUser.test_getUser(GetUser.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:304)
+	at io.restassured.internal.RequestSpecificationImpl$_registerRestAssuredEncoders_closure24.doCall(RequestSpecificationImpl.groovy:1429)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at io.restassured.internal.http.HTTPBuilder$RequestConfigDelegate.setBody(HTTPBuilder.java:1134)
+	at io.restassured.internal.http.HTTPBuilder$RequestConfigDelegate.setPropertiesFromMap(HTTPBuilder.java:1046)
+	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:344)
+	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+	at Day4.FileUploadAndDownload.test_multipleFileUpload(FileUploadAndDownload.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2852348", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2852348'><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
-
+... Removed 53 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1279399383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1279399383'><pre>java.lang.IllegalArgumentException: MIME subtype may not be blank
+	at org.apache.http.util.Args.notBlank(Args.java:74)
+	at org.apache.http.entity.mime.MultipartEntityBuilder.setMimeSubtype(MultipartEntityBuilder.java:102)
+	at org.apache.http.entity.mime.MultipartEntityBuilder$setMimeSubtype$2.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.multipart.RestAssuredMultiPartEntity.&lt;init&gt;(RestAssuredMultiPartEntity.groovy:50)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -684,24 +353,88 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:304)
+	at io.restassured.internal.RequestSpecificationImpl$_registerRestAssuredEncoders_closure24.doCall(RequestSpecificationImpl.groovy:1429)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at Day7.GetUser.test_getUser(GetUser.java:24)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at io.restassured.internal.http.HTTPBuilder$RequestConfigDelegate.setBody(HTTPBuilder.java:1134)
+	at io.restassured.internal.http.HTTPBuilder$RequestConfigDelegate.setPropertiesFromMap(HTTPBuilder.java:1046)
+	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:344)
+	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:790)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+	at Day4.FileUploadAndDownload.test_multipleFileUpload(FileUploadAndDownload.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -732,7 +465,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Day7.GetUser@192d43ce</td></tr>
+<td>Day4.FileUploadAndDownload@61df66b6</td></tr>
 <tr>
 <td title='Day6.Authentications.Oauth2Authentication()'><b>Oauth2Authentication</b><br>Test class: Day6.Authentications</td>
 <td><div><pre>java.net.ConnectException: Connection refused
@@ -752,14 +485,9 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
 	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
-	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -770,10 +498,6 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
 	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -801,10 +525,6 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.filter.FilterContext$next.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -816,10 +536,6 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -832,36 +548,9 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:172)
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
 	at Day6.Authentications.Oauth2Authentication(Authentications.java:72)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1164785940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1164785940'><pre>java.net.ConnectException: Connection refused
+... Removed 47 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1532216261", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1532216261'><pre>java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
@@ -878,7 +567,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
 	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
-	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -896,7 +585,8 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
 	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -927,7 +617,8 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.filter.FilterContext$next.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -942,7 +633,8 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -988,33 +680,17 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Day6.Authentications@5f058f00</td></tr>
+<td>Day6.Authentications@188715b5</td></tr>
 <tr>
-<td title='Day4.FileUploadAndDownload.test_multipleFileUpload()'><b>test_multipleFileUpload</b><br>Test class: Day4.FileUploadAndDownload</td>
+<td title='Day4.FileUploadAndDownload.test_singleFileUpload()'><b>test_singleFileUpload</b><br>Test class: Day4.FileUploadAndDownload</td>
 <td><div><pre>java.lang.IllegalArgumentException: MIME subtype may not be blank
 	at org.apache.http.util.Args.notBlank(Args.java:74)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.setMimeSubtype(MultipartEntityBuilder.java:102)
 	at org.apache.http.entity.mime.MultipartEntityBuilder$setMimeSubtype$2.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
 	at io.restassured.internal.multipart.RestAssuredMultiPartEntity.&lt;init&gt;(RestAssuredMultiPartEntity.groovy:50)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:304)
 	at io.restassured.internal.RequestSpecificationImpl$_registerRestAssuredEncoders_closure24.doCall(RequestSpecificationImpl.groovy:1429)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
@@ -1022,17 +698,9 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.internal.http.HTTPBuilder$RequestConfigDelegate.setBody(HTTPBuilder.java:1134)
 	at io.restassured.internal.http.HTTPBuilder$RequestConfigDelegate.setPropertiesFromMap(HTTPBuilder.java:1046)
 	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:344)
-	at io.restassured.internal.http.HTTPBuilder$post$3.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -1060,11 +728,6 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.filter.FilterContext$next.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -1076,11 +739,6 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -1089,48 +747,16 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
 	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at Day4.FileUploadAndDownload.test_multipleFileUpload(FileUploadAndDownload.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at Day4.FileUploadAndDownload.test_singleFileUpload(FileUploadAndDownload.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace34150451", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace34150451'><pre>java.lang.IllegalArgumentException: MIME subtype may not be blank
+... Removed 53 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1413136929", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1413136929'><pre>java.lang.IllegalArgumentException: MIME subtype may not be blank
 	at org.apache.http.util.Args.notBlank(Args.java:74)
 	at org.apache.http.entity.mime.MultipartEntityBuilder.setMimeSubtype(MultipartEntityBuilder.java:102)
 	at org.apache.http.entity.mime.MultipartEntityBuilder$setMimeSubtype$2.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
 	at io.restassured.internal.multipart.RestAssuredMultiPartEntity.&lt;init&gt;(RestAssuredMultiPartEntity.groovy:50)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -1139,8 +765,6 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:304)
 	at io.restassured.internal.RequestSpecificationImpl$_registerRestAssuredEncoders_closure24.doCall(RequestSpecificationImpl.groovy:1429)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1155,10 +779,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.internal.http.HTTPBuilder$RequestConfigDelegate.setBody(HTTPBuilder.java:1134)
 	at io.restassured.internal.http.HTTPBuilder$RequestConfigDelegate.setPropertiesFromMap(HTTPBuilder.java:1046)
 	at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:344)
-	at io.restassured.internal.http.HTTPBuilder$post$3.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.http.HTTPBuilder$post$2.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1209)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1222,12 +843,10 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
 	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
-	at Day4.FileUploadAndDownload.test_multipleFileUpload(FileUploadAndDownload.java:35)
+	at Day4.FileUploadAndDownload.test_singleFileUpload(FileUploadAndDownload.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1258,7 +877,92 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Day4.FileUploadAndDownload@1ea9f6af</td></tr>
+<td>Day4.FileUploadAndDownload@61df66b6</td></tr>
+<tr>
+<td title='Day7.GetUser.test_getUser()'><b>test_getUser</b><br>Test class: Day7.GetUser<br>Parameters: org.testng.TestRunner@6913c1fb</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Day7.GetUser.test_getUser(GetUser.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace994228009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace994228009'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Day7.GetUser.test_getUser(GetUser.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Day7.GetUser@16ec5519</td></tr>
 <tr>
 <td title='Day6.Authentications.bearerToken()'><b>bearerToken</b><br>Test class: Day6.Authentications</td>
 <td><div><pre>java.net.ConnectException: Connection refused
@@ -1278,13 +982,9 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
 	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
-	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor116.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -1295,10 +995,6 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
 	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -1326,10 +1022,6 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.filter.FilterContext$next.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -1341,10 +1033,6 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
 	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
@@ -1357,36 +1045,9 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:172)
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
 	at Day6.Authentications.bearerToken(Authentications.java:50)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace756528813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace756528813'><pre>java.net.ConnectException: Connection refused
+... Removed 47 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace363172313", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace363172313'><pre>java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.connect0(Native Method)
 	at java.base/sun.nio.ch.Net.connect(Net.java:579)
 	at java.base/sun.nio.ch.Net.connect(Net.java:568)
@@ -1403,10 +1064,11 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
 	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
-	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor116.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -1420,7 +1082,8 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
 	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor85.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -1451,7 +1114,8 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.filter.FilterContext$next.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor75.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -1466,7 +1130,8 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
 	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-	at jdk.internal.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -1512,7 +1177,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Day6.Authentications@5f058f00</td></tr>
+<td>Day6.Authentications@188715b5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -1523,135 +1188,140 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Day6.Authentications.digestAuthentication()'><b>digestAuthentication</b><br>Test class: Day6.Authentications</td>
+<td title='Day7.CreateUser.test_createUser()'><b>test_createUser</b><br>Test class: Day7.CreateUser<br>Parameters: org.testng.TestRunner@6913c1fb</td>
 <td></td>
-<td>1</td>
-<td>Day6.Authentications@5f058f00</td></tr>
-<tr>
-<td title='Day1.HttpRequests.deleteUser()'><b>deleteUser</b><br>Test class: Day1.HttpRequests</td>
-<td></td>
-<td>0</td>
-<td>Day1.HttpRequests@6eda5c9</td></tr>
-<tr>
-<td title='Day4.SerializationAndDeserialization.convertJavaToPojo()'><b>convertJavaToPojo</b><br>Test class: Day4.SerializationAndDeserialization</td>
-<td></td>
-<td>0</td>
-<td>Day4.SerializationAndDeserialization@6a192cfe</td></tr>
-<tr>
-<td title='Day2.DifferentWaysToCreatePost.test_PostWithPojoClass()'><b>test_PostWithPojoClass</b><br>Test class: Day2.DifferentWaysToCreatePost</td>
-<td></td>
-<td>0</td>
-<td>Day2.DifferentWaysToCreatePost@72057ecf</td></tr>
-<tr>
-<td title='Day1.HttpRequests.updateUser()'><b>updateUser</b><br>Test class: Day1.HttpRequests</td>
-<td></td>
-<td>0</td>
-<td>Day1.HttpRequests@6eda5c9</td></tr>
-<tr>
-<td title='Day3.HeadersDemo.test_Header()'><b>test_Header</b><br>Test class: Day3.HeadersDemo</td>
-<td></td>
-<td>0</td>
-<td>Day3.HeadersDemo@3835c46</td></tr>
-<tr>
-<td title='Day2.DifferentWaysToCreatePost.test_delete()'><b>test_delete</b><br>Test class: Day2.DifferentWaysToCreatePost</td>
-<td></td>
-<td>0</td>
-<td>Day2.DifferentWaysToCreatePost@72057ecf</td></tr>
-<tr>
-<td title='Day5.ParsingXMLResponses.testXMLResponse()'><b>testXMLResponse</b><br>Test class: Day5.ParsingXMLResponses</td>
-<td></td>
-<td>0</td>
-<td>Day5.ParsingXMLResponses@20ce78ec</td></tr>
-<tr>
-<td title='Day3.LoggingDemo.test_logs()'><b>test_logs</b><br>Test class: Day3.LoggingDemo</td>
-<td></td>
-<td>0</td>
-<td>Day3.LoggingDemo@2f7298b</td></tr>
-<tr>
-<td title='Day2.DifferentWaysToCreatePost.test_PostWithExternalJsonFile()'><b>test_PostWithExternalJsonFile</b><br>Test class: Day2.DifferentWaysToCreatePost</td>
-<td></td>
-<td>0</td>
-<td>Day2.DifferentWaysToCreatePost@72057ecf</td></tr>
-<tr>
-<td title='Day6.Authentications.basicAuthentication()'><b>basicAuthentication</b><br>Test class: Day6.Authentications</td>
-<td></td>
-<td>1</td>
-<td>Day6.Authentications@5f058f00</td></tr>
-<tr>
-<td title='Day4.ParsingJsonResponse.test_parsingResponse()'><b>test_parsingResponse</b><br>Test class: Day4.ParsingJsonResponse</td>
-<td></td>
-<td>0</td>
-<td>Day4.ParsingJsonResponse@5119fb47</td></tr>
-<tr>
-<td title='Day2.DifferentWaysToCreatePost.test_PostWithOrgJson()'><b>test_PostWithOrgJson</b><br>Test class: Day2.DifferentWaysToCreatePost</td>
-<td></td>
-<td>0</td>
-<td>Day2.DifferentWaysToCreatePost@72057ecf</td></tr>
-<tr>
-<td title='Day3.CockiesDemo.test_getCookiesInfo()'><b>test_getCookiesInfo</b><br>Test class: Day3.CockiesDemo</td>
-<td></td>
-<td>0</td>
-<td>Day3.CockiesDemo@1dde4cb2</td></tr>
-<tr>
-<td title='Day7.CreateUser.test_createUser()'><b>test_createUser</b><br>Test class: Day7.CreateUser<br>Parameters: org.testng.TestRunner@7eb27768</td>
-<td></td>
-<td>0</td>
-<td>Day7.CreateUser@20deea7f</td></tr>
-<tr>
-<td title='Day6.FakerDataGenerator.test_geerateDummyData()'><b>test_geerateDummyData</b><br>Test class: Day6.FakerDataGenerator</td>
-<td></td>
-<td>0</td>
-<td>Day6.FakerDataGenerator@7714e963</td></tr>
-<tr>
-<td title='Day1.HttpRequests.getSingleUser()'><b>getSingleUser</b><br>Test class: Day1.HttpRequests</td>
-<td></td>
-<td>0</td>
-<td>Day1.HttpRequests@6eda5c9</td></tr>
+<td>2</td>
+<td>Day7.CreateUser@130161f7</td></tr>
 <tr>
 <td title='Day1.HttpRequests.getMultipleUser()'><b>getMultipleUser</b><br>Test class: Day1.HttpRequests</td>
 <td></td>
 <td>0</td>
-<td>Day1.HttpRequests@6eda5c9</td></tr>
+<td>Day1.HttpRequests@7193666c</td></tr>
 <tr>
-<td title='Day3.CockiesDemo.test_Cookies()'><b>test_Cookies</b><br>Test class: Day3.CockiesDemo</td>
+<td title='Day7.UpdateUser.test_UpdateUser()'><b>test_UpdateUser</b><br>Test class: Day7.UpdateUser<br>Parameters: org.testng.TestRunner@6913c1fb</td>
 <td></td>
 <td>0</td>
-<td>Day3.CockiesDemo@1dde4cb2</td></tr>
+<td>Day7.UpdateUser@2f7298b</td></tr>
 <tr>
-<td title='Day3.HeadersDemo.test_getHeaders()'><b>test_getHeaders</b><br>Test class: Day3.HeadersDemo</td>
+<td title='Day6.FakerDataGenerator.test_geerateDummyData()'><b>test_geerateDummyData</b><br>Test class: Day6.FakerDataGenerator</td>
 <td></td>
 <td>0</td>
-<td>Day3.HeadersDemo@3835c46</td></tr>
+<td>Day6.FakerDataGenerator@20ce78ec</td></tr>
+<tr>
+<td title='Day3.LoggingDemo.test_logs()'><b>test_logs</b><br>Test class: Day3.LoggingDemo</td>
+<td></td>
+<td>0</td>
+<td>Day3.LoggingDemo@50eac852</td></tr>
+<tr>
+<td title='Day6.Authentications.PreemptiveAuthentication()'><b>PreemptiveAuthentication</b><br>Test class: Day6.Authentications</td>
+<td></td>
+<td>4</td>
+<td>Day6.Authentications@188715b5</td></tr>
+<tr>
+<td title='Day2.DifferentWaysToCreatePost.test_delete()'><b>test_delete</b><br>Test class: Day2.DifferentWaysToCreatePost</td>
+<td></td>
+<td>0</td>
+<td>Day2.DifferentWaysToCreatePost@243c4f91</td></tr>
+<tr>
+<td title='Day3.CockiesDemo.test_getCookiesInfo()'><b>test_getCookiesInfo</b><br>Test class: Day3.CockiesDemo</td>
+<td></td>
+<td>0</td>
+<td>Day3.CockiesDemo@393671df</td></tr>
+<tr>
+<td title='Day3.HeadersDemo.test_Header()'><b>test_Header</b><br>Test class: Day3.HeadersDemo</td>
+<td></td>
+<td>0</td>
+<td>Day3.HeadersDemo@1ea9f6af</td></tr>
+<tr>
+<td title='Day1.HttpRequests.updateUser()'><b>updateUser</b><br>Test class: Day1.HttpRequests</td>
+<td></td>
+<td>0</td>
+<td>Day1.HttpRequests@7193666c</td></tr>
 <tr>
 <td title='Day4.JSONSchemaValidations.test_validateSchema()'><b>test_validateSchema</b><br>Test class: Day4.JSONSchemaValidations</td>
 <td></td>
 <td>0</td>
-<td>Day4.JSONSchemaValidations@188715b5</td></tr>
+<td>Day4.JSONSchemaValidations@20deea7f</td></tr>
 <tr>
-<td title='Day6.Authentications.PreemptiveAuthentication()'><b>PreemptiveAuthentication</b><br>Test class: Day6.Authentications</td>
-<td></td>
-<td>2</td>
-<td>Day6.Authentications@5f058f00</td></tr>
-<tr>
-<td title='Day1.HttpRequests.createUser()'><b>createUser</b><br>Test class: Day1.HttpRequests</td>
+<td title='Day2.DifferentWaysToCreatePost.test_PostWithExternalJsonFile()'><b>test_PostWithExternalJsonFile</b><br>Test class: Day2.DifferentWaysToCreatePost</td>
 <td></td>
 <td>0</td>
-<td>Day1.HttpRequests@6eda5c9</td></tr>
+<td>Day2.DifferentWaysToCreatePost@243c4f91</td></tr>
 <tr>
-<td title='Day3.PathAndQueryParameters.test_PathAndQueryParameters()'><b>test_PathAndQueryParameters</b><br>Test class: Day3.PathAndQueryParameters</td>
+<td title='Day2.DifferentWaysToCreatePost.test_PostWithPojoClass()'><b>test_PostWithPojoClass</b><br>Test class: Day2.DifferentWaysToCreatePost</td>
 <td></td>
-<td>2</td>
-<td>Day3.PathAndQueryParameters@2ef3eef9</td></tr>
+<td>0</td>
+<td>Day2.DifferentWaysToCreatePost@243c4f91</td></tr>
+<tr>
+<td title='Day1.HttpRequests.deleteUser()'><b>deleteUser</b><br>Test class: Day1.HttpRequests</td>
+<td></td>
+<td>0</td>
+<td>Day1.HttpRequests@7193666c</td></tr>
+<tr>
+<td title='Day4.ParsingJsonResponse.test_parsingResponse()'><b>test_parsingResponse</b><br>Test class: Day4.ParsingJsonResponse</td>
+<td></td>
+<td>0</td>
+<td>Day4.ParsingJsonResponse@1dde4cb2</td></tr>
+<tr>
+<td title='Day5.ParsingXMLResponses.testXMLResponse()'><b>testXMLResponse</b><br>Test class: Day5.ParsingXMLResponses</td>
+<td></td>
+<td>0</td>
+<td>Day5.ParsingXMLResponses@2ef3eef9</td></tr>
+<tr>
+<td title='Day7.DeleteUser.test_DeleteUser()'><b>test_DeleteUser</b><br>Test class: Day7.DeleteUser<br>Parameters: org.testng.TestRunner@6913c1fb</td>
+<td></td>
+<td>0</td>
+<td>Day7.DeleteUser@3835c46</td></tr>
+<tr>
+<td title='Day4.SerializationAndDeserialization.convertJavaToPojo()'><b>convertJavaToPojo</b><br>Test class: Day4.SerializationAndDeserialization</td>
+<td></td>
+<td>0</td>
+<td>Day4.SerializationAndDeserialization@291ae</td></tr>
+<tr>
+<td title='Day1.HttpRequests.getSingleUser()'><b>getSingleUser</b><br>Test class: Day1.HttpRequests</td>
+<td></td>
+<td>0</td>
+<td>Day1.HttpRequests@7193666c</td></tr>
+<tr>
+<td title='Day6.Authentications.digestAuthentication()'><b>digestAuthentication</b><br>Test class: Day6.Authentications</td>
+<td></td>
+<td>1</td>
+<td>Day6.Authentications@188715b5</td></tr>
 <tr>
 <td title='Day2.DifferentWaysToCreatePost.test_PostHashMap()'><b>test_PostHashMap</b><br>Test class: Day2.DifferentWaysToCreatePost</td>
 <td></td>
 <td>0</td>
-<td>Day2.DifferentWaysToCreatePost@72057ecf</td></tr>
+<td>Day2.DifferentWaysToCreatePost@243c4f91</td></tr>
 <tr>
-<td title='Day7.UpdateUser.test_UpdateUser()'><b>test_UpdateUser</b><br>Test class: Day7.UpdateUser<br>Parameters: org.testng.TestRunner@7eb27768</td>
+<td title='Day3.PathAndQueryParameters.test_PathAndQueryParameters()'><b>test_PathAndQueryParameters</b><br>Test class: Day3.PathAndQueryParameters</td>
 <td></td>
 <td>0</td>
-<td>Day7.UpdateUser@55b7a4e0</td></tr>
+<td>Day3.PathAndQueryParameters@7714e963</td></tr>
+<tr>
+<td title='Day3.CockiesDemo.test_Cookies()'><b>test_Cookies</b><br>Test class: Day3.CockiesDemo</td>
+<td></td>
+<td>0</td>
+<td>Day3.CockiesDemo@393671df</td></tr>
+<tr>
+<td title='Day1.HttpRequests.createUser()'><b>createUser</b><br>Test class: Day1.HttpRequests</td>
+<td></td>
+<td>0</td>
+<td>Day1.HttpRequests@7193666c</td></tr>
+<tr>
+<td title='Day6.Authentications.basicAuthentication()'><b>basicAuthentication</b><br>Test class: Day6.Authentications</td>
+<td></td>
+<td>2</td>
+<td>Day6.Authentications@188715b5</td></tr>
+<tr>
+<td title='Day3.HeadersDemo.test_getHeaders()'><b>test_getHeaders</b><br>Test class: Day3.HeadersDemo</td>
+<td></td>
+<td>0</td>
+<td>Day3.HeadersDemo@1ea9f6af</td></tr>
+<tr>
+<td title='Day2.DifferentWaysToCreatePost.test_PostWithOrgJson()'><b>test_PostWithOrgJson</b><br>Test class: Day2.DifferentWaysToCreatePost</td>
+<td></td>
+<td>0</td>
+<td>Day2.DifferentWaysToCreatePost@243c4f91</td></tr>
 </table><p>
 </body>
 </html>

@@ -3,11 +3,29 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day4.JSONSchemaValidations">
+      <class name="Day4.FileUploadAndDownload">
         <methods>
-          <include name="test_validateSchema"/>
+          <include name="test_singleFileUpload"/>
+          <include name="test_multipleFileUpload"/>
         </methods>
-      </class> <!-- Day4.JSONSchemaValidations -->
+      </class> <!-- Day4.FileUploadAndDownload -->
+      <class name="Day7.GetUser">
+        <methods>
+          <include name="test_getUser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Day7.GetUser -->
+      <class name="Day6.Authentications">
+        <methods>
+          <include name="Oauth2Authentication"/>
+          <include name="bearerToken"/>
+          <include name="Oauth1Authentiication"/>
+        </methods>
+      </class> <!-- Day6.Authentications -->
+      <class name="Day7.DeleteUser">
+        <methods>
+          <include name="test_DeleteUser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Day7.DeleteUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

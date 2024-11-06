@@ -1,6 +1,7 @@
 package Day4;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import io.restassured.module.jsv.JsonSchemaValidator;
 
